@@ -49,19 +49,29 @@
       <input type="number" name="number" id="number">
     </label>
 
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
     <input type="range" name="a" id="a" value="50"> + 
     <input type="number" name="b" id="b" value="50">
-    = <output name="result" for="a b"></output>100</output>
+    = <output name="result" for="a b">100</output>
+  </form>
 
-    <legend>Messages</legend>
-    <label>
-      First Name: <input type="text" placeholder="message"
-      name="first_name"> 
-    </label>
+
+
+    <!--output tag defines the result of a calculation (gives you javascript results)
+    //parse int arent numbers they are strings that need to be converted to a number to add and make sure we receive a number as its output-->
+
 
     <form>
-      <label for="Months">Months of the Year:</label>
-      <select name="Months"></select>
+      <label for="cars">
+        <p>Choose your car!</p>
+      <select name="cars" id="cars">
+        <option value="Ford">Ford</option>
+        <option value="BMW">BMW</option>
+        <option value="Jeep">Jeep</option>
+        <option value="Hummer">Hummer</option>
+        <option value="Dodge">Dodge</option>
+
+    </select>
     </form>
 
     <button type="submit">
